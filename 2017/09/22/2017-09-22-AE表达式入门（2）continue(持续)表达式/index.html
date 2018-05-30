@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    言简意赅
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="miccall" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">sengoku</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/After-Effects/">After Effects</a></li><li><a class="category-link" href="/categories/作品/">作品</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://ws1.sinaimg.cn/large/b85b28acgy1frsny1s8xpj21400ic79i.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >AE表达式入门（2）continue(持续)表达式</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>在用AE制作动画的过程中 我们经常会需要让一些层的运动持续下去<br>当然这个我们可以通过打关键帧来达成<br>但是,当需要这种持续运动的层 或事物多的时候 普通的做法会十分的耗费力气和精力<br>这里我们可以通过学习一个简单的表达式来完成这种动画~！<br>那么所说的那个简单的表达式 便是<code>Continue</code>持续表达式了<br><a id="more"></a></p>
+<h4 id="先说一下它的写法-这个表达式写作"><a href="#先说一下它的写法-这个表达式写作" class="headerlink" title="先说一下它的写法 这个表达式写作"></a>先说一下它的写法 这个表达式写作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">loopOut（type=：“continue”）</span><br></pre></td></tr></table></figure>
+<h5 id="如图"><a href="#如图" class="headerlink" title="如图"></a>如图</h5><p><img src="https://ws1.sinaimg.cn/large/b85b28acgy1fjskprs0l1j205e0113y9.jpg" alt=""></p>
+<p>这个表达式的写法并没有那么简单了</p>
+<p>并不是之前学的那些有点像数学函数一样的</p>
+<p>####这里先解释一下这个写法的意义</p>
+<blockquote>
+<p><strong>loopOut</strong> ：从，遵从的意思<br>​            &gt; <em>引出表达式内容 类似于做题时“答”的意思</em><br><strong>type</strong>：类型<br><strong>continue</strong>：持续的意思</p>
+</blockquote>
+<p>这上面三个单词的意思 大家把它们拼凑起来 大概就可以明白了</p>
+<p>也就是说这个表达式的意思是参数（写上表达式的属性）遵从格式为<code>continue(持续)</code>的表达形式或运动</p>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><p>新建一个合成，然后新建一个形状，圆形方形都可以</p>
+<p>在形状层的位置属性上 先打两个<strong>关键帧</strong>做一个简单的位移动画</p>
+<h5 id="如图-1"><a href="#如图-1" class="headerlink" title="如图"></a>如图</h5><p><img src="https://ws1.sinaimg.cn/large/b85b28acgy1fjsm555s3tj20zk0lmtbn.jpg" alt=""></p>
+<p>这个时候<br>按住<code>Alt</code>鼠标左键点击位置属性的 ⏱️ 输入表达式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">loopOut(type=&quot;continue&quot;)</span><br></pre></td></tr></table></figure>
+<p><code>注意使用英文输入法输入</code></p>
+<h5 id="这里有点要注意的："><a href="#这里有点要注意的：" class="headerlink" title="这里有点要注意的："></a>这里有点要注意的：</h5><p>这个持续的表达式 要使他生效 必须得有一个<strong>关键帧</strong>动画 </p>
+<p>也就是说这个持续的效果 得有一个作用的效果 不然就是写好了表达式也没有地方发挥效力~~！</p>
+<p><img src="https://ws1.sinaimg.cn/large/b85b28acgy1fjsmdrffk7j20zk0mbgo7.jpg" alt=""></p>
+<p>好了<br>输入完表达式 这个例子就完成了！</p>
+<p>我们来看一下效果：</p>
+<p>我们会发现形状层的位置属性上的<strong>关键帧</strong>动画在没有关键帧效力的地方也会一直运动下去，如图圆形一直移动到了画布外面还没停止，这便是持续表达式的力量了~！</p>
+<p><img src="https://ws1.sinaimg.cn/large/b85b28acgy1fjsmf48zkeg21b00xkh7u.gif" alt=""></p>
+<hr>
+<h3 id="这个表达式的运用地方比较广一些时钟的制作-让钟的指针不停的运转-等等等"><a href="#这个表达式的运用地方比较广一些时钟的制作-让钟的指针不停的运转-等等等" class="headerlink" title="这个表达式的运用地方比较广一些时钟的制作 让钟的指针不停的运转 等等等"></a>这个表达式的运用地方比较广一些时钟的制作 让钟的指针不停的运转 等等等</h3><p>具体的运用就不多说了<br>这些还要靠自己去实践运用</p>
+<hr>
+<p>那么，这次的内容到此为止，下期将会讲解continue(持续)的兄弟cycle(循环)和pingpong(反复循环)的表达式。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/09/22/2017-09-22-AE表达式入门（2）continue(持续)表达式/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/09/22/2017-09-22-AE表达式入门（2）continue(持续)表达式/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2018总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
